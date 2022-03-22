@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="https://www.daporkchop.net/favicon.ico" type="image/x-icon">
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="/"><h1>{{ site.title }}</h1></a>
+        <p>{{ site.description }}</p>
+        <br>
+        <strong>
+          <a href="https://github.com/PorkStudios/PorkLib">PorkLib</a><br>
+          <a href="/porkbot">Discord Bot</a><br>
+          <a href="/2b2t">2b2t</a><br>
+          <a href="/projects">Projects</a><br>
+          <a href="/servers">Servers</a><br>
+          <a href="/contact">Contact</a>
+        </strong>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <strong><a href="/donate">Donate</a><br></strong>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+  </body>
+</html>
